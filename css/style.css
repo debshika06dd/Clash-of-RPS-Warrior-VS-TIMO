@@ -160,7 +160,6 @@ body {
   /* text-align: center; */
   background-color: #000000;
   color: #E9E3DF;
-  font-family: 'Permanent Marker', cursive;;
   font-size: bolder;
   text-align: center; /* center the text itself */
   display: flex;
@@ -168,6 +167,7 @@ body {
 }
 
 .literal-rules ol{
+  font-family: 'Roboto', san-serif;
   text-align: left;  /* keep list items aligned neatly */
   display: inline-block; /* makes the list shrink to its content */
   margin-top:20px;
