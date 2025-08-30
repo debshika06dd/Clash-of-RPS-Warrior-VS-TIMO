@@ -160,7 +160,7 @@ body {
   /* text-align: center; */
   background-color: #000000;
   color: #E9E3DF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Permanent Marker', cursive;;
   font-size: bolder;
   text-align: center; /* center the text itself */
   display: flex;
@@ -342,5 +342,6 @@ body {
     width: 80px;
   }
 }
+
 
 
