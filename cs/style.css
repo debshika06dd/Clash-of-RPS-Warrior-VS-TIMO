@@ -222,6 +222,8 @@ body {
     flex-direction: column;   /* stack vertically */
     gap: 20px;               /* smaller gap between choices */
     margin-top: 40px;        /* less top space */
+    justify-content:center;
+    align-items:center;
   }
 
   .choices img {
@@ -240,4 +242,5 @@ body {
     margin-left: 2px;
     }
 }
+
 
