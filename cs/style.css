@@ -176,6 +176,54 @@ body {
 
 
 /* media queries */
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .player img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .choices img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Medium desktops & laptops (992px – 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .choices {
+    gap: 60px;
+  }
+}
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .player img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .choices img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+
+/*Tablets*/
 @media (max-width: 768px) {
   .circle {
     flex-direction: column; /*stacks item vertically in the coloumn instead of row*/
@@ -205,6 +253,27 @@ body {
     }
 }
 
+
+/*Small tablets & big phones*/
+@media (max-width: 767px) and (min-width: 451px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .choices {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .choices img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/*Normal Smartphones*/
 @media (max-width: 450px) {
   h1 {
     font-size: 24px;
@@ -241,6 +310,37 @@ body {
     margin-top: 10px;
     margin-left: 2px;
     }
+}
+
+/* Extra small phones (max 350px) */
+@media (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .vs {
+    font-size: 18px;
+  }
+
+  .player img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .choices img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .t-btn img {
+    width: 120px;
+    height: 40px;
+  }
+
+  #r1 {
+    font-size: 18px;
+    width: 80px;
+  }
 }
 
 
