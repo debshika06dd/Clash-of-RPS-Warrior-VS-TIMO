@@ -1,0 +1,232 @@
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 60px;
+  color: #E9E3DF;
+}
+
+body {
+  background-color: #000000;
+}
+
+.rules { 
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  background-color: #FF7A30;
+  color: #E9E3DF;
+  border-radius: 8px;
+  margin: 15px auto;  /* centers the button, 15px applies to top and bottom, auto applies to left and right, which makes the element center horizontally (if it has a fixed width or display: block) */ 
+  display: block;     /* makes margin:auto work */
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer; /*changes cursor to hand icon when hover over this element, shows that the element is clickable*/
+}
+
+/* Container for TIMO, VS, Warrior */
+.circle {
+  display: flex;
+  justify-content: center;   /* center items in a row horizontally (left to right) */
+  align-items: center;       /* aligns items in a row vertically (top to bottom) */
+  gap: 60px;                 /* spacing between items */
+  margin-top: 50px;
+}
+
+.player {
+  text-align: center;
+}
+
+.player img {
+  border-radius: 50%;
+  border: 4px solid blue;
+  width: 200px;
+  height: 200px;
+}
+
+.w-name, .t-name {
+  font-family: 'Roboto', sans-serif;
+  color: #E9E3DF;
+  margin-top: 10px;
+}
+
+.vs {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: #E63946;
+}
+
+/* Choices row */
+.choices {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* space between rock, paper, scissors */
+}
+
+.choices img {
+  border-radius: 15%;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.choices img:hover {
+  transform: scale(1.1); /* little zoom on hover */
+}
+
+.choices img:active {
+  transform: translateY(2px); /* moves it down a little */
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 70px;
+}
+
+/* .torn-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    /* align-items: center;     vertical center */
+    
+/* } */ 
+
+.torn-btn-text{
+    font-family: 'Roboto', sans-serif;
+    color: #E9E3DF;
+    top: 50%;                   /* vertical center */
+    left: 50%;                  /* horizontal center */
+    transform: translate(-50%, -50%); /* perfect center */
+    position: absolute;
+    font-size: larger;            /* adjust size */
+    font-weight: bolder;
+    pointer-events: none;       /* click goes through text */
+}
+
+.t-btn {
+  position: relative;         /* so text can be placed over image */
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0;                 /* remove default padding */
+}
+
+.t-btn img{
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
+    padding: 10px 20px; /*top-bottom-> 10px, left-right-> 20px, used for defining the space inside the button between the text and the button’s border*/
+    font-size: 18px;
+    cursor:pointer;
+    transition: transform 0.2s;
+}
+
+.t-btn img:hover {
+    transform: scale(1.1);
+    /* background: #000000; */
+}
+
+/*Active effect (clicked)*/
+.t-btn img:active {
+  /* background: #000000; */
+  transform: translateY(2px); /* moves it down a little */
+}
+
+#r1{
+    font-size:30px;
+    height: 50px; 
+    width: 150px; 
+    /* background-color: #000000; */
+    border: none;
+    color:#E9E3DF;
+    margin-top: 20px;
+    margin-left: 3px;;
+}
+
+.result-container{
+  font-family: 'Roboto', sans-serif;
+  color: #E9E3DF;
+  font-size: larger;
+  text-align: center;
+}
+
+.literal-rules{
+  /* text-align: center; */
+  background-color: #000000;
+  color: #E9E3DF;
+  font-family: 'Roboto', sans-serif;
+  font-size: bolder;
+  text-align: center; /* center the text itself */
+  display: flex;
+  justify-content: center; /* center the block */
+}
+
+.literal-rules ol{
+  text-align: left;  /* keep list items aligned neatly */
+  display: inline-block; /* makes the list shrink to its content */
+  margin-top:20px;
+  
+}
+
+
+/* media queries */
+@media (max-width: 768px) {
+  .circle {
+    flex-direction: column; /*stacks item vertically in the coloumn instead of row*/
+    gap: 20px;
+  }
+
+    .vs {
+        font-size: 30px;
+    }
+
+  .choices {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .t-btn img{
+    font-size: 16px;
+    padding:9px 18px;
+  }
+
+  #r1 {
+    font-size: 24px;  /* smaller icon */
+    height: 45px;
+    width: 120px;
+    margin-top: 12px;
+    margin-left: 2px;
+    }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .vs {
+    font-size: 24px;
+  }
+
+  .player img, .choices img {
+    width: 150px;
+    height: 150px;
+  }
+  .t-btn img {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  #r1 {
+    font-size: 20px; /* even smaller */
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 2px;
+    }
+}

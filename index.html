@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            ROCK-PAPER-SCISSOR
+        </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="stylesheet" href="./cs/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <h1>ROCK PAPER SCISSOR</h1>
+
+        <button class="rules" onClick="window.location.href='./rules.html'">RULES</button>
+        
+        <!--Placing Warrior and TIMO image and their names-->
+        <div class="circle">
+            <div class="player">
+                <img src="./images/ad53c8c2-8022-42e8-b33a-1f30d1fe2fa7.jpg" alt="TIMO" height="200px" width="200px">
+                <h3 class="t-name">TIMO</h3>
+            </div>
+ 
+             <div class="vs">VS</div>
+
+            <div class="player">
+                <img src="./images/warrior.jfif" alt="warrior" height="200px" width="200px">
+                <h3 class="w-name">Warrior</h3>
+            </div>
+        </div>
+
+
+        <!--Choices button-->
+        <div class="choices">
+            <img class="rock" src="./images/rock-removebg-preview.png" alt="rock" height="200px" width=" 200px">
+            <img class="paper" src="./images/paper-removebg-preview.png" alt="paper" height="200px" width="200px">
+            <img class="scissors" src="./images/scissors.jfif" alt="scissors" height="200px" width="200px">
+        </div>
+        
+
+        <!--Play and Reset buttons-->
+        <div class="controls">
+            
+            <div class="torn-btn">
+                <button id="play-btn" class="t-btn" style="background-color: black; border: none; ">
+                    <img src="./images/torn-paper-copy.png" height="50px" width="150px">
+                    <span class="torn-btn-text">PLAY</span>
+                </button>
+            </div>
+
+            <div class="reset">
+                <button id="reset-btn" class="t-btn" style="background-color: black; border: none; ">
+                    <img src="./images/torn-paper-copy.png" height="50px" width="150px">
+                    <span class="torn-btn-text">
+                        <i class="fa fa-refresh" id="r1"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+
+        <!--Wiinner or Loser-->
+        <div class="result-container">
+            <p id = "result"></p>
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
