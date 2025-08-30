@@ -25,6 +25,7 @@ choices.forEach(choice =>{ //choice is parameter
 playBtn.addEventListener("click", ()=>{
     if(!playerChoice){
         resultText.textContent = "Please select Rock, Paper, or Scissors!";
+        resultText.scrollIntoView({ behavior: "smooth", block: "center" }); //for auto scrolling down
         return;
     }
 
@@ -48,6 +49,7 @@ playBtn.addEventListener("click", ()=>{
     }
 
     resultText.textContent = result;
+    resultText.scrollIntoView({ behavior: "smooth", block: "center" }); //for auto scrolling down
 });
 
 //step3: Reset button logic
@@ -57,4 +59,5 @@ resetBtn.addEventListener("click", ()=>{
     choices.forEach(c=> c.style.border = "none");
 
 });
+
 
