@@ -41,10 +41,10 @@ playBtn.addEventListener("click", ()=>{
         (playerChoice === "paper" && computerChoice === "rock") || 
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-        result = `🎉 You, the Warrior, WINS! ${playerChoice.toUpperCase()} beats ${computerChoice.toUpperCase()}`;
+        result = `🎉 You, the Warrior, WINS! ${playerChoice.toUpperCase()} beats ${computerChoice.toUpperCase()}!`;
     }
     else{
-        result = `😞 Sorry Warrior, TIMO WINS! ${computerChoice.toUpperCase()} beats ${playerChoice.toUpperCase()}`;
+        result = `😞 Sorry Warrior, TIMO WINS! ${computerChoice.toUpperCase()} beats ${playerChoice.toUpperCase()}!`;
     }
 
     resultText.textContent = result;
@@ -57,3 +57,4 @@ resetBtn.addEventListener("click", ()=>{
     choices.forEach(c=> c.style.border = "none");
 
 });
+
