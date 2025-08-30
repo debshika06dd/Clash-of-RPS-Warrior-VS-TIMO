@@ -214,9 +214,19 @@ body {
     font-size: 24px;
   }
 
-  .player img, .choices img {
+  .player img{
     width: 150px;
     height: 150px;
+  }
+  .choices {
+    flex-direction: column;   /* stack vertically */
+    gap: 20px;               /* smaller gap between choices */
+    margin-top: 40px;        /* less top space */
+  }
+
+  .choices img {
+    width: 120px;   /* reduce size */
+    height: 120px;
   }
   .t-btn img {
     padding: 6px 12px;
@@ -230,3 +240,4 @@ body {
     margin-left: 2px;
     }
 }
+
